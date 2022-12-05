@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Doc</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+    body{
+        background-image: url("assets/images/pexels-olya-kobruseva-5417674.jpg");
+        padding-bottom: 227px;
+        background-size:100%;
+        background-position:80%;
+    }
+    .navbar{
+        background-color:bisque;
+        margin-bottom: 0;
+    }
+    
+    a{
+      text-transform: uppercase;
+    }
+    h1{
+        font-size:xx-large;
+        font-weight:bolder;
+        font-family:"fantasy";
+        color:white;
+        text-transform:uppercase;
+        text-align: center;
+    }
+    th{
+        text-transform:uppercase;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color:black;
+    }
+    .head{
+      color: black;
+    }
+    .data{
+      color:white;
+    }
+  </style>
+</head>
+<body>
+  <app-routing></app-routing>
+
+<div class="container"><br><br>
+  <h1>Doctor Available Schedule</h1><br><br><br><br>   
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th class="head">Doctor Name</th>
+        <th class="head">Specialization</th>
+        <th class="head">Timings</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="data">Itachi</td>
+        <td class="data">Physiotherapy</td>
+        <td class="data">9AM-12PM</td>
+      </tr>
+      <tr>
+        <td class="data">Levi</td>
+        <td class="data">Cardiologist</td>
+        <td class="data">12PM-9PM</td>
+      </tr>
+      <tr>
+        <td class="data">Madara</td>
+        <td class="data">Neurologist</td>
+        <td class="data">12PM-6PM</td>
+      </tr>
+      <tr>
+        <td class="data">Obito</td>
+        <td class="data">Radiology</td>
+        <td class="data">12PM-6PM</td>
+      </tr>
+      <tr>
+        <td class="data">Dante</td>
+        <td class="data">Gastrenterology</td>
+        <td class="data">2PM-9PM</td>
+      </tr>
+      <tr>
+        <td class="data">Gojo Saturo</td>
+        <td class="data">Anaethesia</td>
+        <td class="data">12PM-6PM</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>

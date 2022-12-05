@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+    .navbar{
+        background-color:black;
+        margin-bottom: 0;
+        
+    }
+    .navbar-brand{
+      font-size:medium;
+    }
+    a{
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+      <div class="container-fluid">
+          <div class="navbar-header"> 
+              <a class="navbar-brand"><span class="glyphicon glyphicon-heart-empty"></span>Covid-19 Hospital</a> 
+          </div>
+              <ul class="nav navbar-nav">
+                <li><a [routerLink]="['/Userlogin']"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a [routerLink]="['/Userregister']"> <span class="glyphicon glyphicon-pencil"></span> Sign up</a></li>
+                <li><a [routerLink]="['/Aboutus']"><span class="glyphicon glyphicon-hand-right"></span> About/Contact us</a></li>
+              </ul>
+        </div>
+    </nav>
+</body>
+</html>

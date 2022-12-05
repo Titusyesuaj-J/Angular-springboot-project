@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Feedback</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+    body{
+        background-image: url("assets/images/pexels-bithin-raj-2763927.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        
+    }
+    .container{
+        padding-bottom: 215px;
+    }
+    h1{
+        font:bold;
+        font-family: sans-serif;
+        color: white;
+        text-align: center;
+    }
+    div .transbox{
+      background: rgba(252, 252, 252, 0.068);
+      box-shadow:6px;
+      border: none;
+    }
+    label{
+        text-transform: capitalize;
+        font-size: medium;
+        font-family: sans-serif;
+        color:white;
+    }
+    </style>
+    </head>
+<body>
+    <app-loginnavbar></app-loginnavbar>
+    <div class="container">
+        <h1>Sign up</h1><br><br>
+        <div class="well well-lg transbox">
+        <form (ngSubmit)="onSubmit()">
+          <div class="row-xs-3">
+            <label for="usr">User Id:</label>
+            <input type="text"  class="form-control"  id="user" [(ngModel)]= "register.userId" name="userId">
+          </div>
+          <div class="mb-3">
+            <label for="usr">Password:</label>
+            <input type="password" class="form-control" id="userpassword"  [(ngModel)]= "register.password" name="password">
+          </div>
+          <div class="mb-3">
+            <label for="usr">Re-type password:</label>
+            <input type="password"  class="form-control" id="usercpassword" [(ngModel)]= "register.cpassword" name="cpassword">
+          </div>
+          <div class="mb-3">
+            <label for="usr">email id:</label>
+            <input type="email" class="form-control" id="useremailid" [(ngModel)]= "register.email" name="email">
+          </div>
+          <br>
+          <button class = "btn btn-success" type ="submit">Submit</button>
+      </form></div>
+    </div></body></html>
+

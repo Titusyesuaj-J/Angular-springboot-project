@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+    body{
+        background-image: url("assets/images/pexels-artem-saranin-1547813.jpg");
+        background-repeat: no-repeat;
+        background-size:110%;
+        background-position: center;
+    }
+    * {
+  box-sizing: border-box;
+}
+    input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }}
+ 
+  </style>
+</head>
+<body>
+  <app-routing></app-routing>
+
+    <div class="container">
+        <div class="jumbotron">
+          <h1>About Us</h1>
+          <p>Our Covid-19 Hospital is a premier multi-specialty healthcare service provider in North India. We’re based in Lucknow but patient across the country and abroad are visiting us for our quality medical care, quick service and reasonable charge. In the journey of 30+ years, we’ve reached the unreached, cared the uncared and touched the untouched and won innumerable hearts.We believe, when it is about health issue no one should ever agree to compromise. In fact, one should go all out to get the best possible medical services. Because we live only once.For the people of Lucknow, the best part is that they need to search not too dip, as Heart Hospital offers all their requirements. We’ve a remarkable history of offering proficiency and multi-specialty services. With finest ICU and medical facilities, there is no ifs, no buts, and the answer for the best hospital for Lucknowians is simple and straight - Covid-19 Hospital.
+
+            Our hospital is uniquely planned to offer multiple services and designed for all segments of society. The infrastructure of the hospital is fascinating and facilities available are affordable. Moreover, our special consideration for the economically weaker section of the society helps us to reinstall commoners’ faith in doctors and hospitals. We give optimum value to our philosophy - “Care for Patients”.We’ve experienced a phenomenal journey since 1985. From a single bed hospital to 100 bed hospital, one specialty to 36 specialties, one doctor to 50+ doctors, 3 Staff to 250+ Staff. With time, we have grown and so our services. Today, our every department - Cardiology, Neurology, Neurosurgery, Nephrology, Paediatrics, Emergency & Trauma, Orthopedic, Ophthalmology, Urology, Gynecology & Obstetrics, Gastroenterology & Herpetology, Cardiotherasic& Vascular Surgery Physiotherapy, Dental, ENT, Dialysis and Renal It is equipped with the best of facilities.
+            
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+        
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+            <div class="item active">
+                <img src="assets/images/pexels-arman-chowdhury-4258253.jpg" alt="doctor">
+            </div>
+        
+            <div class="item">
+                <img src="assets/images/doc.jpg" alt="surgery">
+            </div>
+        
+            <div class="item">
+                <img src="assets/images/pexels-mart-production-7088488.jpg" alt="scan">
+            </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+      </div>
+
+      <div class="container">
+        <div style="text-align:center">
+          <h2>Contact Us</h2>
+          <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="assets/images/pexels-pixabay-326576.jpg" style="width:100%;height:600px;">
+          </div>
+          <div class="column">
+            <form role="form">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="e-mail">Email id</label>
+              <input type="email" id="e-mail" name="mail" placeholder="Your Email..">
+              <label for="ph">Phone number</label>
+              <input type="text" id="ph" name="phonenumber" placeholder="Your Phone number..">
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Send Message">
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
